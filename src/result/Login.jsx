@@ -23,37 +23,37 @@ const Login = () => {
 
    const handleSubmit = async (e) => {
       e.preventDefault();
-    
+
       const formData = {
-        name: e.target.elements.name.value,
-        email: e.target.elements.email.value,
-        password: e.target.elements.password.value,
-        remember: e.target.elements.remember.checked,
+         name: e.target.elements.name.value,
+         email: e.target.elements.email.value,
+         password: e.target.elements.password.value,
+         remember: e.target.elements.remember.checked,
       };
 
       console.log(formData);
-    
+
       try {
-        const response = await fetch('http://localhost:3001/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
-        });
-    
-        if (response.ok) {
-          alert('Registration successful');
-        } else {
-          alert('Registration failed');
-        }
+         const response = await fetch('http://localhost:3001/login', {
+            method: 'POST',
+            headers: {
+               'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+         });
+
+         if (response.ok) {
+            alert('Registration successful');
+         } else {
+            alert('Registration failed');
+         }
       } catch (error) {
-        console.error('Error submitting form:', error);
-        alert('An error occurred while submitting the form');
+         console.error('Error submitting form:', error);
+         alert('An error occurred while submitting the form');
       }
-    };
-    
-    
+   };
+
+
 
    return (
       <>
@@ -82,7 +82,7 @@ const Login = () => {
                   <div className="row align-items-center">
                      <div className="col-6">
                         <div className="header-signin-logo">
-                           <Link to='/'><img src={mainLogo} alt="" style={{ height: '130px', width: '300px' }} /></Link>
+                           <Link to='/'><img src={mainLogo} alt="" style={{ height: '80px', width: '150px' }} /></Link>
                         </div>
                      </div>
                      <div className="col-6">
@@ -118,14 +118,17 @@ const Login = () => {
 
                <main>
                   <div className="signin-banner-area signin-banner-main-wrap d-flex align-items-center">
-                     <div className="signin-banner-left-box signin-banner-bg p-relative" data-background={loginBg} style={{ backgroundColor: '#86A7FC' }}>
+                     <div className="signin-banner-left-box signin-banner-bg p-relative" data-background={loginBg}>
                         <div className="signin-banner-bottom-shape">
                            <img src={loginShape1} alt="" />
                         </div>
                      </div>
 
                      <div className="signin-banner-from d-flex justify-content-center align-items-center">
-                        <div className="signin-banner-from-wrap">
+                        <div className="signin-banner-from-wrap" style={{
+                           padding: '80px', border: '1px', borderRadius: '40px',
+                           boxShadow: '0px 4px 35px #00000014'
+                        }}>
                            <div className="signin-banner-title-box">
                               <h4 className="signin-banner-from-title">Register Account</h4>
                            </div>
@@ -146,7 +149,7 @@ const Login = () => {
                               </a>
                            </div>
                            <div className="signin-banner-from-box">
-                              <h5 className="signin-banner-from-subtitle" style={{fontSize:'15px'}}>Create account ?{' '}<a href='/signup'> Sign up</a></h5>
+                              <h5 className="signin-banner-from-subtitle" style={{ fontSize: '15px' }}>Create account ?{' '}<a href='/signup'> Sign up</a></h5>
                               <form onSubmit={handleSubmit}>
                                  <div className="row">
                                     <div className="col-12">
@@ -190,29 +193,29 @@ const Login = () => {
                                     </div>
                                  </div>
                                  <div className="signin-banner-form-remember">
-                                 <div className="row">
-                                    <div className="col-6">
-                                       <div className="postbox__comment-agree">
-                                          <div className="form-check">
-                                             <input className="form-check-input" name='remember' type="checkbox" value="" id="flexCheckDefault" />
-                                             <label className="form-check-label" for="flexCheckDefault">
-                                                Remember me
-                                             </label>
+                                    <div className="row">
+                                       <div className="col-6">
+                                          <div className="postbox__comment-agree">
+                                             <div className="form-check">
+                                                <input className="form-check-input" name='remember' type="checkbox" value="" id="flexCheckDefault" />
+                                                <label className="form-check-label" for="flexCheckDefault">
+                                                   Remember me
+                                                </label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div className="col-6">
+                                          <div className="postbox__forget text-end">
+                                             <a href="#">Forgot password ?</a>
                                           </div>
                                        </div>
                                     </div>
-                                    <div className="col-6">
-                                       <div className="postbox__forget text-end">
-                                          <a href="#">Forgot password ?</a>
-                                       </div>
-                                    </div>
                                  </div>
-                              </div>
-                              <div className="signin-banner-from-btn mb-20">
-                                 <button className="signin-btn ">Register</button>
-                              </div>
+                                 <div className="signin-banner-from-btn mb-20">
+                                    <button className="signin-btn ">Register</button>
+                                 </div>
                               </form>
-                              
+
                            </div>
                         </div>
                      </div>

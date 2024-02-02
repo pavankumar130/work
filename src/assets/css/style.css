@@ -15883,9 +15883,7 @@ input[type=color] {
 }
 
 .signin-banner-bg {
-  padding: 200px 75px;
   height: 960px;
-  width: 575px;
   background-repeat: no-repeat;
   background-size: cover;
   flex: 0 0 auto;
