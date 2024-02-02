@@ -3,7 +3,7 @@ import { FaGoogle, FaFacebook, FaApple } from 'react-icons/fa';
 import logo from '../assets/google.png'
 import "./styles.css";
 
-const Login2 = () => {
+const Login = () => {
     return (
         <div className="box">
             <div className="overlap-wrapper">
@@ -58,4 +58,4 @@ const Login2 = () => {
     );
 };
 
-export default Login2;
+export default Login;
