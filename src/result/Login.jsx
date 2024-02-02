@@ -82,7 +82,7 @@ const Login = () => {
                   <div className="row align-items-center">
                      <div className="col-6">
                         <div className="header-signin-logo">
-                           <Link to='/'><img src={mainLogo} alt="" style={{ height: '80px', width: '150px' }} /></Link>
+                           <Link to='/'><img src={mainLogo} alt="" style={{ height: '60px', width: '150px' }} /></Link>
                         </div>
                      </div>
                      <div className="col-6">
@@ -118,16 +118,10 @@ const Login = () => {
 
                <main>
                   <div className="signin-banner-area signin-banner-main-wrap d-flex align-items-center">
-                     <div className="signin-banner-left-box signin-banner-bg p-relative" data-background={loginBg}>
-                        <div className="signin-banner-bottom-shape">
-                           <img src={loginShape1} alt="" />
-                        </div>
-                     </div>
-
                      <div className="signin-banner-from d-flex justify-content-center align-items-center">
                         <div className="signin-banner-from-wrap" style={{
-                           padding: '80px', border: '1px', borderRadius: '40px',
-                           boxShadow: '0px 4px 35px #00000014'
+                           padding: '30px 30px', border: '1px', borderRadius: '40px',
+                           boxShadow: '0px 4px 35px #00000014',width:'500px',marginTop:'50px'
                         }}>
                            <div className="signin-banner-title-box">
                               <h4 className="signin-banner-from-title">Register Account</h4>
@@ -149,19 +143,13 @@ const Login = () => {
                               </a>
                            </div>
                            <div className="signin-banner-from-box">
-                              <h5 className="signin-banner-from-subtitle" style={{ fontSize: '15px' }}>Create account ?{' '}<a href='/signup'> Sign up</a></h5>
+                              <h5 className="signin-banner-from-subtitle" style={{ fontSize: '13px' }}>Create account ?{' '}<a href='/signup' style={{fontSize:'13px'}}> Sign up</a></h5>
                               <form onSubmit={handleSubmit}>
                                  <div className="row">
                                     <div className="col-12">
                                        <div className="postbox__comment-input mb-30">
                                           <input type="text" className="inputText" name='name' required />
-                                          <span className="floating-label">Full Name</span>
-                                       </div>
-                                    </div>
-                                    <div className="col-12">
-                                       <div className="postbox__comment-input mb-30">
-                                          <input type="text" className="inputText" name='email' required />
-                                          <span className="floating-label">Your Email</span>
+                                          <span className="floating-label">User Name</span>
                                        </div>
                                     </div>
                                     <div className="col-12">
