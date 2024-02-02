@@ -38,9 +38,9 @@ const Blog = () => {
                                         <div className="elementor-element elementor-element-75d4936 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="75d4936" data-element_type="widget" data-widget_type="button.default">
                                             <div className="elementor-widget-container">
                                                 <div className="elementor-button-wrapper">
-                                                    <a className="elementor-button elementor-button-link elementor-size-sm" href="/login">
+                                                    <a className="elementor-button elementor-button-link elementor-size-sm" href="#">
                                                         <span className="elementor-button-content-wrapper">
-                                                            <span className="elementor-button-text">Login</span>
+                                                            <span className="elementor-button-text">Client area</span>
                                                         </span>
                                                     </a>
                                                 </div>
@@ -52,7 +52,7 @@ const Blog = () => {
                         </section>
                     </div>
                 </div>
-                <div className="parent-img-post-inner" style={{background:'none' ,backgroundColor:'#fff',padding:'50px 0'}}>
+                <div className="parent-img-post-inner">
                     <div className="blog-title-top">
                     </div>
                     <div className="parent-title-archive">
@@ -61,9 +61,11 @@ const Blog = () => {
                                 <div className="custom-width-area-content">
                                     {/* Title */}
                                     <div className="main-page-title-in">
-                                        <h2 style={{color:'black'}}>
+                                        <h2>
                                             Blog                  </h2>
                                     </div>
+                                    {/* Breadcrumb */}
+                                    <ul className="wdes-breadcrumb-area"><li><a href="../index.html"><span className="fas fa-home home-icon" />Home</a></li><li className="wdes-breadcrumb-title-active">Blog</li></ul>
                                 </div>
                             </div>
                         </div>

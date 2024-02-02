@@ -39,11 +39,11 @@ const Login2 = () => {
                     <form className='form'>
                         <div className="group-54">
                             <label htmlFor="username" className='field'>Username</label>
-                            <input type="text" id="username" name="username" placeholder="Enter your username" />
+                            <input type="text" id="username" name="username" placeholder="Enter your username" style={{borderRadius:'25px',padding:'22px 10px',borderWidth:'2px'}}/>
                         </div>
                         <div className="group-54-instance">
                             <label htmlFor="password" className='field'>Password</label>
-                            <input type="password" id="password" name="password" placeholder="Enter your password" />
+                            <input type="password" id="password" name="password" placeholder="Enter your password" style={{borderRadius:'25px',padding:'15px 10px',borderWidth:'2px'}}/>
                         </div>
                         <div className="text-wrapper-6">Forgot Password</div>
                         <div className="div-wrapper">
