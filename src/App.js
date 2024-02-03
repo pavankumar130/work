@@ -14,6 +14,7 @@ import Signup from './result/Signup';
 import Company from './company/Company';
 import Blog from './blog/Blog';
 import Contact from './contact/Contact';
+import ChatsLayoutV from './chat/ChatsLayoutV';
 
 
 
@@ -36,6 +37,7 @@ function App() {
           <Route path='/company' element={<Company/>}/>
           <Route path='/blog' element={<Blog/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/chat' element={<ChatsLayoutV/>}/>
         </Routes>
       </Router>
     </>
