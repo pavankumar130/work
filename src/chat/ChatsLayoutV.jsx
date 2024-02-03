@@ -39,6 +39,7 @@ const ChatsLayoutV = () => {
                 }}
             >
                 <SidebarMainItemsWrapper />
+                <a href="/chatai">
                 <button
                     style={{
                         cursor: "pointer",
@@ -56,11 +57,6 @@ const ChatsLayoutV = () => {
                         gap: "7px",
                     }}
                 >
-                    <img
-                        style={{ height: "15px", width: "15px", position: "relative" }}
-                        alt=""
-                        src="/line-roundedplus.svg"
-                    />
                     <div
                         style={{
                             position: "relative",
@@ -85,6 +81,7 @@ const ChatsLayoutV = () => {
                         src="/line-roundedarrow-rigth.svg"
                     />
                 </button>
+                </a>
             </div>
             <main
                 style={{
