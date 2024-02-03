@@ -1,8 +1,9 @@
 import React from "react";
 import logo from '../assets/google.png'
 import {FaRocketchat} from 'react-icons/fa'
-import {MdLibraryBooks} from 'react-icons/md'
+import {MdLibraryBooks,MdArrowRight} from 'react-icons/md'
 import {GrAppsRounded} from 'react-icons/gr'
+import {BsChatSquare} from 'react-icons/bs'
 
 const SidebarMainItemsWrapper = () => {
     return (
@@ -207,9 +208,10 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
+                    fontSize:'20px'
                   }}
                 >
-                  <FaRocketchat/> Chats
+                  <FaRocketchat/> {'   '} Chats
                 </div>
               </div>
             </div>
@@ -249,9 +251,12 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
+                    fontSize:'19px',
+                    color:'black',
+                    paddingLeft:'8px'
                   }}
                 >
-                  <MdLibraryBooks/> Library
+                  <MdLibraryBooks/> {'   '}Library
                 </div>
               </div>
             </div>
@@ -266,7 +271,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "space-between",
-                padding: "8px 10px 8px 12px",
+                padding: "1px 10px 8px 12px",
                 boxSizing: "border-box",
                 gap: "0px",
                 rowGap: "20px",
@@ -290,9 +295,12 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
+                    fontSize:'18px',
+                    color:'black',
+                    paddingLeft:'8px'
                   }}
                 >
-                  <GrAppsRounded/> Apps
+                  <GrAppsRounded/> {'   '}Apps
                 </div>
               </div>
             </div>
@@ -621,10 +629,11 @@ const SidebarMainItemsWrapper = () => {
             <div
               style={{
                 position: "relative",
-                letterSpacing: "0.1em",
                 lineHeight: "130%",
                 textTransform: "uppercase",
-                fontWeight: "500",
+                fontWeight: "600",
+                fontSize:'22px',
+                color:'green'
               }}
             >
               Pinned Chats
@@ -723,9 +732,11 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
+                    color:'black',
+                    fontSize:'17px'
                   }}
                 >
-                  Pinned chat 1
+                  <MdArrowRight/> Pinned chat 1
                 </div>
               </div>
               <div
@@ -815,9 +826,11 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
+                    color:'black',
+                    fontSize:'17px'
                   }}
                 >
-                  Pinned chat 2
+                  <MdArrowRight/> Pinned chat 2
                 </div>
               </div>
               <div
@@ -907,9 +920,11 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
+                    color:'black',
+                    fontSize:'17px'
                   }}
                 >
-                  Pinned chat 3
+                  <MdArrowRight/> Pinned chat 3
                 </div>
               </div>
               <div
@@ -999,9 +1014,11 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
+                    color:'black',
+                    fontSize:'17px'
                   }}
                 >
-                  Pinned chat 4
+                  <MdArrowRight/> Pinned chat 4
                 </div>
               </div>
               <div
@@ -1282,10 +1299,11 @@ const SidebarMainItemsWrapper = () => {
             <div
               style={{
                 position: "relative",
-                letterSpacing: "0.1em",
                 lineHeight: "130%",
                 textTransform: "uppercase",
-                fontWeight: "500",
+                fontWeight: "600",
+                color:'green',
+                fontSize:'22px'
               }}
             >
               Chat History
@@ -1353,7 +1371,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "8px 10px 8px 12px",
+                padding: "8px 10px 5px 12px",
               }}
             >
               <div
@@ -1384,9 +1402,11 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
+                    color:'black',
+                    fontSize:'18px'
                   }}
                 >
-                  Chat 1
+                  <BsChatSquare/> <span style={{paddingLeft:'8px'}}>Chat 1</span>
                 </div>
               </div>
               <div
@@ -1445,7 +1465,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "8px 10px 8px 12px",
+                padding: "1px 10px 5px 12px",
               }}
             >
               <div
@@ -1476,9 +1496,11 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
+                    color:'black',
+                    fontSize:'18px'
                   }}
                 >
-                  Chat 2
+                  <BsChatSquare/> <span style={{paddingLeft:'8px'}}>Chat 2</span>
                 </div>
               </div>
               <div
@@ -1537,7 +1559,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "8px 10px 8px 12px",
+                padding: "1px 10px 5px 12px",
               }}
             >
               <div
@@ -1568,9 +1590,11 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
+                    color:'black',
+                    fontSize:'18px'
                   }}
                 >
-                  Chat 3
+                  <BsChatSquare/> <span style={{paddingLeft:'8px'}}>Chat 3</span>
                 </div>
               </div>
               <div
@@ -1614,7 +1638,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "8px 10px 8px 12px",
+                padding: "1px 10px 5px 12px",
               }}
             >
               <div
@@ -1635,9 +1659,11 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
+                    color:'black',
+                    fontSize:'18px'
                   }}
                 >
-                    Chat 5
+                    <BsChatSquare/> <span style={{paddingLeft:'8px'}}>Chat 4</span>
                 </div>
               </div>
               <div
@@ -1681,7 +1707,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "8px 10px 8px 12px",
+                padding: "1px 10px 8px 12px",
               }}
             >
               <div
@@ -1702,9 +1728,11 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
+                    color:'black',
+                    fontSize:'18px'
                   }}
                 >
-                  Chat 6
+                  <BsChatSquare/> <span style={{paddingLeft:'8px'}}>Chat 5</span>
                 </div>
               </div>
               <div
