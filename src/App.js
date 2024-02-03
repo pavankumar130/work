@@ -15,6 +15,7 @@ import Company from './company/Company';
 import Blog from './blog/Blog';
 import Contact from './contact/Contact';
 import ChatsLayoutV from './chat/ChatsLayoutV';
+import ChatMessageSidebar from './chat/ChatMessageSidebar';
 
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/blog' element={<Blog/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/chat' element={<ChatsLayoutV/>}/>
+          <Route path='/chatai' element={<ChatMessageSidebar/>}/>
         </Routes>
       </Router>
     </>
