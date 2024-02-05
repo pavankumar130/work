@@ -57,8 +57,8 @@ function ResultComponent(props) {
     <li className="b_algo">
       <div className="b_title" style={{lineHeight:'0'}}>
         <h2 style={{marginBottom : '0'}}>
-          <a style={{color:'#174AE4',opacity:'0.8',fontWeight:'normal',fontSize:'18px'}} href={props.link} h="ID=SERP,5292.1">
-            {props.title} {props.index < 10 ? <MdVerified style={{fontSize:'20px'}}/>:''}
+          <a style={{color:'#1A0DAB',opacity:'0.8',fontWeight:'normal',fontSize:'18px'}} href={props.link} h="ID=SERP,5292.1">
+            {props.title} {props.index < 10 ? <MdVerified style={{fontSize:'17px'}}/>:''}
           </a>
         </h2>
       </div>
@@ -79,7 +79,7 @@ function ResultComponent(props) {
             </span>
           </div>
           <p className="b_lineclamp2 b_algoSlug">
-            <span className="news_dt" style={{fontSize:'14px',fontFamily: 'Raleway, sans-serif',color:'black'}} >
+            <span className="news_dt" style={{fontSize:'14px',fontFamily: 'Raleway, sans-serif',color:'#494949'}} >
               {props.snippet}
             </span>
           </p>
