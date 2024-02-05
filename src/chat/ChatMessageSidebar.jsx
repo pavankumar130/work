@@ -2392,7 +2392,7 @@ const ChatMessageSidebar = () => {
                       flexShrink: "0",
                     }}
                   >
-                    How can I help you?
+                    <textarea rows="4" style={{border:'none',width:'100%',overflow:'hidden'}}/>
                   </div>
                   <div
                     style={{
