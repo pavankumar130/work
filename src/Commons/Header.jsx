@@ -244,7 +244,7 @@ const Header = ({ page }) => {
               </svg>
               All
             </a></li>
-            <li style={{marginLeft:'1rem'}}><a class="nav-link" href={'../ComingSoon/'}>
+            <li style={{marginLeft:'1rem'}}><a class="nav-link" href={'/chat'}>
               <svg
                 width={16}
                 height={16}

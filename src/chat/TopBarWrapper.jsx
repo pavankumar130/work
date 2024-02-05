@@ -143,6 +143,7 @@ const TopBarWrapper = () => {
               src="/line-roundedarrow-rigth.svg"
             />
           </div>
+          <a href="/chatai">
           <div
             style={{
               flex: "1",
@@ -160,11 +161,6 @@ const TopBarWrapper = () => {
               color: "#fff",
             }}
           >
-            <img
-              style={{ height: "12px", width: "12px", position: "relative" }}
-              alt=""
-              src="/line-roundedplus-1.svg"
-            />
             <div
               style={{
                 position: "relative",
@@ -185,6 +181,7 @@ const TopBarWrapper = () => {
               src="/line-roundedarrow-rigth.svg"
             />
           </div>
+          </a>
           <div
             style={{
               display: "none",
