@@ -210,7 +210,7 @@ const SidebarMainItemsWrapper = () => {
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
                     fontSize:'15px',
-                    color:'#C7C8CC'
+                    color:'#6B728E '
                   }}
                 >
                   <FaRocketchat/> {'   '} Chats
@@ -255,7 +255,7 @@ const SidebarMainItemsWrapper = () => {
                     whiteSpace: "nowrap",
                     fontSize:'15px',
                     paddingLeft:'8px',
-                    color:'#C7C8CC'
+                    color:'#6B728E '
                   }}
                 >
                   <MdLibraryBooks/> {'   '}Library
@@ -299,229 +299,10 @@ const SidebarMainItemsWrapper = () => {
                     whiteSpace: "nowrap",
                     fontSize:'15px',
                     paddingLeft:'8px',
-                    color:'#C7C8CC !important'
+                    color:'#6B728E '
                   }}
                 >
                   <BiLogoPlayStore/> {'   '}Apps
-                </div>
-              </div>
-            </div>
-            <div
-              style={{
-                alignSelf: "stretch",
-                height: "43px",
-                borderRadius: "8px",
-                overflow: "hidden",
-                flexShrink: "0",
-                display: "none",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-between",
-                padding: "8px 10px 8px 12px",
-                boxSizing: "border-box",
-                gap: "0px",
-                rowGap: "20px",
-              }}
-            >
-              <div
-                style={{
-                  height: "18px",
-                  width: "190px",
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                  gap: "8px",
-                }}
-              >
-                <div
-                  style={{
-                    alignSelf: "stretch",
-                    flex: "1",
-                    position: "relative",
-                    lineHeight: "130%",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Link item
-                </div>
-              </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
-                </div>
-              </div>
-            </div>
-            <div
-              style={{
-                alignSelf: "stretch",
-                height: "43px",
-                borderRadius: "8px",
-                overflow: "hidden",
-                flexShrink: "0",
-                display: "none",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-between",
-                padding: "8px 10px 8px 12px",
-                boxSizing: "border-box",
-                gap: "0px",
-                rowGap: "20px",
-              }}
-            >
-              <div
-                style={{
-                  height: "18px",
-                  width: "190px",
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                  gap: "8px",
-                }}
-              >
-                <div
-                  style={{
-                    alignSelf: "stretch",
-                    flex: "1",
-                    position: "relative",
-                    lineHeight: "130%",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Link item
-                </div>
-              </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
-                </div>
-              </div>
-            </div>
-            <div
-              style={{
-                alignSelf: "stretch",
-                height: "43px",
-                borderRadius: "8px",
-                overflow: "hidden",
-                flexShrink: "0",
-                display: "none",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-between",
-                padding: "8px 10px 8px 12px",
-                boxSizing: "border-box",
-                gap: "0px",
-                rowGap: "20px",
-              }}
-            >
-              <div
-                style={{
-                  height: "18px",
-                  width: "190px",
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                  gap: "8px",
-                }}
-              >
-                <div
-                  style={{
-                    alignSelf: "stretch",
-                    flex: "1",
-                    position: "relative",
-                    lineHeight: "130%",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Link item
-                </div>
-              </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
                 </div>
               </div>
             </div>
@@ -530,7 +311,7 @@ const SidebarMainItemsWrapper = () => {
         <div
           style={{
             alignSelf: "stretch",
-            height: "206px",
+            height: "170px",
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
@@ -565,7 +346,7 @@ const SidebarMainItemsWrapper = () => {
           <div
             style={{
               alignSelf: "stretch",
-              flex: "1",
+              flex: "unset",
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-start",
@@ -605,9 +386,10 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'#B4B4B8',
+                    color:'#6B728E ',
                     fontSize:'17px',
-                    fontFamily:'inter'
+                    fontFamily:'inter',
+                    paddingTop:'8px'
                   }}
                 >
                   <MdArrowRight/> Pinned chat 1
@@ -644,9 +426,10 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'#B4B4B8',
+                    color:'#6B728E ',
                     fontSize:'17px',
-                    fontFamily:'inter'
+                    fontFamily:'inter',
+                    paddingTop:'8px'
                   }}
                 >
                   <MdArrowRight/> Pinned chat 2
@@ -684,9 +467,10 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'#B4B4B8',
+                    color:'#6B728E ',
                     fontSize:'17px',
-                    fontFamily:'inter'
+                    fontFamily:'inter',
+                    paddingTop:'8px'
                   }}
                 >
                   <MdArrowRight/> Pinned chat 3
@@ -724,125 +508,14 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'#B4B4B8',
+                    color:'#6B728E ',
                     fontSize:'17px',
-                    fontFamily:'inter'
+                    fontFamily:'inter',
+                    paddingTop:'8px'
                   }}
                 >
                   <MdArrowRight/> Pinned chat 4
                 </div>
-              </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "none",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-              </div>
-            </div>
-            <div
-              style={{
-                alignSelf: "stretch",
-                height: "43px",
-                borderRadius: "8px",
-                overflow: "hidden",
-                flexShrink: "0",
-                display: "none",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-between",
-                padding: "8px 10px 8px 12px",
-                boxSizing: "border-box",
-                gap: "0px",
-                rowGap: "20px",
-              }}
-            >
-              <div
-                style={{
-                  height: "18px",
-                  width: "190px",
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                  gap: "8px",
-                }}
-              >
-              </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-              </div>
-            </div>
-            <div
-              style={{
-                alignSelf: "stretch",
-                height: "43px",
-                borderRadius: "8px",
-                overflow: "hidden",
-                flexShrink: "0",
-                display: "none",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-between",
-                padding: "8px 10px 8px 12px",
-                boxSizing: "border-box",
-                gap: "0px",
-                rowGap: "20px",
-              }}
-            >
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-              
               </div>
             </div>
           </div>
@@ -850,7 +523,7 @@ const SidebarMainItemsWrapper = () => {
         <div
           style={{
             alignSelf: "stretch",
-            flex: "1",
+            flex: "unset",
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
@@ -872,7 +545,6 @@ const SidebarMainItemsWrapper = () => {
             <div
               style={{
                 position: "relative",
-                lineHeight: "130%",
                 textTransform: "uppercase",
                 fontWeight: "600",
                 color:'#C7C8CC',
@@ -883,7 +555,7 @@ const SidebarMainItemsWrapper = () => {
             </div>
             <div
               style={{
-                height: "21px",
+                height: "10px",
                 borderRadius: "24px",
                 backgroundColor: "#fff",
                 boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
@@ -893,44 +565,22 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "center",
-                padding: "3px 4px 2px",
+                padding: "0px 4px 0px",
                 gap: "4px",
               }}
             >
-              <div
-                style={{
-                  alignSelf: "stretch",
-                  position: "relative",
-                  letterSpacing: "0.1em",
-                  lineHeight: "130%",
-                  textTransform: "uppercase",
-                  fontWeight: "500",
-                }}
-              >
-                Clear
-              </div>
-              <img
-                style={{
-                  height: "11px",
-                  width: "11px",
-                  position: "relative",
-                  display: "none",
-                }}
-                alt=""
-                src="/line-roundedcommand.svg"
-              />
             </div>
           </div>
           <div
             style={{
               alignSelf: "stretch",
-              flex: "1",
+              flex: "unset",
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-start",
               justifyContent: "flex-start",
               gap: "2px",
-              fontSize: "14px",
+              fontSize: "10px",
               color: "#666f8d",
             }}
           >
@@ -957,76 +607,20 @@ const SidebarMainItemsWrapper = () => {
                   gap: "8px",
                 }}
               >
-                <img
-                  style={{
-                    height: "16px",
-                    width: "16px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedmessage.svg"
-                />
                 <div
                   style={{
                     flex: "1",
                     position: "relative",
-                    lineHeight: "130%",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
-                    whiteSpace: "nowrap",
-                    color:'#B4B4B8',
-                    fontSize:'18px'
+                    color:'#6B728E ',
+                    fontSize:'15px',
+                    paddingTop:'8px'
                   }}
                 >
                   <BsChatSquare/> <span style={{paddingLeft:'8px'}}>Chat 1</span>
                 </div>
               </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "none",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-                <img
-                  style={{ height: "11px", width: "11px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedcommand-13.svg"
-                />
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
-                </div>
-                <img
-                  style={{
-                    height: "11px",
-                    width: "11px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedcommand.svg"
-                />
-              </div>
             </div>
             <div
               style={{
@@ -1051,76 +645,21 @@ const SidebarMainItemsWrapper = () => {
                   gap: "8px",
                 }}
               >
-                <img
-                  style={{
-                    height: "16px",
-                    width: "16px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedmessage.svg"
-                />
                 <div
                   style={{
                     flex: "1",
                     position: "relative",
-                    lineHeight: "130%",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'#B4B4B8',
-                    fontSize:'18px'
+                    color:'#6B728E ',
+                    fontSize:'15px',
+                    paddingTop:'8px'
                   }}
                 >
                   <BsChatSquare/> <span style={{paddingLeft:'8px'}}>Chat 2</span>
                 </div>
               </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "none",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-                <img
-                  style={{ height: "11px", width: "11px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedcommand-14.svg"
-                />
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
-                </div>
-                <img
-                  style={{
-                    height: "11px",
-                    width: "11px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedcommand.svg"
-                />
-              </div>
             </div>
             <div
               style={{
@@ -1145,16 +684,6 @@ const SidebarMainItemsWrapper = () => {
                   gap: "8px",
                 }}
               >
-                <img
-                  style={{
-                    height: "16px",
-                    width: "16px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedmessage.svg"
-                />
                 <div
                   style={{
                     flex: "1",
@@ -1163,43 +692,14 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'#B4B4B8',
-                    fontSize:'18px'
+                    color:'#6B728E ',
+                    fontSize:'15px',
+                    paddingTop:'8px'
                   }}
                 >
                   <BsChatSquare/> <span style={{paddingLeft:'8px'}}>Chat 3</span>
                 </div>
               </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "none",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
-                </div>
-              </div>
             </div>
             <div
               style={{
@@ -1232,41 +732,12 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'#B4B4B8',
-                    fontSize:'18px'
+                    color:'#6B728E ',
+                    fontSize:'15px',
+                    paddingTop:'8px'
                   }}
                 >
                     <BsChatSquare/> <span style={{paddingLeft:'8px'}}>Chat 4</span>
-                </div>
-              </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "none",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
                 </div>
               </div>
             </div>
@@ -1301,41 +772,12 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'#B4B4B8',
-                    fontSize:'18px'
+                    color:'#6B728E',
+                    fontSize:'15px',
+                    paddingTop:'8px'
                   }}
                 >
                   <BsChatSquare/> <span style={{paddingLeft:'8px'}}>Chat 5</span>
-                </div>
-              </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "none",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
                 </div>
               </div>
             </div>
