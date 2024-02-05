@@ -4,6 +4,7 @@ import {FaRocketchat} from 'react-icons/fa'
 import {MdLibraryBooks,MdArrowRight} from 'react-icons/md'
 import {GrAppsRounded} from 'react-icons/gr'
 import {BsChatSquare} from 'react-icons/bs'
+import {BiLogoPlayStore} from 'react-icons/bi'
 
 const SidebarMainItemsWrapper = () => {
     return (
@@ -158,7 +159,7 @@ const SidebarMainItemsWrapper = () => {
             <div
               style={{
                 alignSelf: "stretch",
-                height: "43px",
+                height: "39px",
                 borderRadius: "8px",
                 overflow: "hidden",
                 flexShrink: "0",
@@ -184,7 +185,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "space-between",
-                padding: "8px 10px 8px 12px",
+                padding: "0px 10px 0px 12px",
                 boxSizing: "border-box",
                 gap: "0px",
                 rowGap: "20px",
@@ -208,7 +209,8 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    fontSize:'20px'
+                    fontSize:'15px',
+                    color:'#C7C8CC'
                   }}
                 >
                   <FaRocketchat/> {'   '} Chats
@@ -219,7 +221,7 @@ const SidebarMainItemsWrapper = () => {
             <div
               style={{
                 alignSelf: "stretch",
-                height: "43px",
+                height: "39px",
                 borderRadius: "8px",
                 overflow: "hidden",
                 flexShrink: "0",
@@ -251,9 +253,9 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    fontSize:'19px',
-                    color:'black',
-                    paddingLeft:'8px'
+                    fontSize:'15px',
+                    paddingLeft:'8px',
+                    color:'#C7C8CC'
                   }}
                 >
                   <MdLibraryBooks/> {'   '}Library
@@ -263,7 +265,7 @@ const SidebarMainItemsWrapper = () => {
             <div
               style={{
                 alignSelf: "stretch",
-                height: "43px",
+                height: "25px",
                 borderRadius: "8px",
                 overflow: "hidden",
                 flexShrink: "0",
@@ -295,12 +297,12 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    fontSize:'18px',
-                    color:'black',
-                    paddingLeft:'8px'
+                    fontSize:'15px',
+                    paddingLeft:'8px',
+                    color:'#C7C8CC !important'
                   }}
                 >
-                  <GrAppsRounded/> {'   '}Apps
+                  <BiLogoPlayStore/> {'   '}Apps
                 </div>
               </div>
             </div>
@@ -332,11 +334,6 @@ const SidebarMainItemsWrapper = () => {
                   gap: "8px",
                 }}
               >
-                <img
-                  style={{ height: "16px", width: "16px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedmessage-1.svg"
-                />
                 <div
                   style={{
                     alignSelf: "stretch",
@@ -371,11 +368,6 @@ const SidebarMainItemsWrapper = () => {
                   color: "#19213d",
                 }}
               >
-                <img
-                  style={{ height: "11px", width: "11px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedcommand-4.svg"
-                />
                 <div
                   style={{
                     position: "relative",
@@ -385,16 +377,6 @@ const SidebarMainItemsWrapper = () => {
                 >
                   1
                 </div>
-                <img
-                  style={{
-                    height: "11px",
-                    width: "11px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedcommand.svg"
-                />
               </div>
             </div>
             <div
@@ -425,11 +407,6 @@ const SidebarMainItemsWrapper = () => {
                   gap: "8px",
                 }}
               >
-                <img
-                  style={{ height: "16px", width: "16px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedmessage-2.svg"
-                />
                 <div
                   style={{
                     alignSelf: "stretch",
@@ -464,11 +441,6 @@ const SidebarMainItemsWrapper = () => {
                   color: "#19213d",
                 }}
               >
-                <img
-                  style={{ height: "11px", width: "11px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedcommand-5.svg"
-                />
                 <div
                   style={{
                     position: "relative",
@@ -478,16 +450,6 @@ const SidebarMainItemsWrapper = () => {
                 >
                   1
                 </div>
-                <img
-                  style={{
-                    height: "11px",
-                    width: "11px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedcommand.svg"
-                />
               </div>
             </div>
             <div
@@ -518,11 +480,6 @@ const SidebarMainItemsWrapper = () => {
                   gap: "8px",
                 }}
               >
-                <img
-                  style={{ height: "16px", width: "16px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedmessage-3.svg"
-                />
                 <div
                   style={{
                     alignSelf: "stretch",
@@ -557,11 +514,6 @@ const SidebarMainItemsWrapper = () => {
                   color: "#19213d",
                 }}
               >
-                <img
-                  style={{ height: "11px", width: "11px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedcommand-6.svg"
-                />
                 <div
                   style={{
                     position: "relative",
@@ -571,38 +523,9 @@ const SidebarMainItemsWrapper = () => {
                 >
                   1
                 </div>
-                <img
-                  style={{
-                    height: "11px",
-                    width: "11px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedcommand.svg"
-                />
               </div>
             </div>
           </div>
-          <img
-            style={{
-              width: "100%",
-              height: "calc(100% - 16.1px)",
-              position: "absolute",
-              margin: "0",
-              top: "15.9px",
-              right: "-0.2px",
-              bottom: "0.2px",
-              left: "0.2px",
-              maxWidth: "100%",
-              overflow: "hidden",
-              maxHeight: "100%",
-              display: "none",
-              zIndex: "2",
-            }}
-            alt=""
-            src="/gradient.svg"
-          />
         </div>
         <div
           style={{
@@ -632,50 +555,11 @@ const SidebarMainItemsWrapper = () => {
                 lineHeight: "130%",
                 textTransform: "uppercase",
                 fontWeight: "600",
-                fontSize:'22px',
-                color:'green'
+                fontSize:'18px',
+                color:'#C7C8CC'
               }}
             >
               Pinned Chats
-            </div>
-            <div
-              style={{
-                height: "21px",
-                borderRadius: "24px",
-                backgroundColor: "#fff",
-                boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                border: "0.8px solid #e3e6ea",
-                boxSizing: "border-box",
-                display: "none",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: "3px 4px 2px",
-                gap: "4px",
-              }}
-            >
-              <div
-                style={{
-                  alignSelf: "stretch",
-                  position: "relative",
-                  letterSpacing: "0.1em",
-                  lineHeight: "130%",
-                  textTransform: "uppercase",
-                  fontWeight: "500",
-                }}
-              >
-                Clear
-              </div>
-              <img
-                style={{
-                  height: "11px",
-                  width: "11px",
-                  position: "relative",
-                  display: "none",
-                }}
-                alt=""
-                src="/line-roundedcommand.svg"
-              />
             </div>
           </div>
           <div
@@ -687,7 +571,7 @@ const SidebarMainItemsWrapper = () => {
               alignItems: "flex-start",
               justifyContent: "flex-start",
               gap: "2px",
-              fontSize: "14px",
+              fontSize: "10px",
               color: "#666f8d",
             }}
           >
@@ -701,7 +585,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "8px 10px 8px 12px",
+                padding: "0px 10px 0px 12px",
               }}
             >
               <div
@@ -714,76 +598,21 @@ const SidebarMainItemsWrapper = () => {
                   gap: "8px",
                 }}
               >
-                <img
-                  style={{
-                    height: "16px",
-                    width: "16px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedmessage.svg"
-                />
                 <div
                   style={{
                     flex: "1",
                     position: "relative",
-                    lineHeight: "130%",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'black',
-                    fontSize:'17px'
+                    color:'#B4B4B8',
+                    fontSize:'17px',
+                    fontFamily:'inter'
                   }}
                 >
                   <MdArrowRight/> Pinned chat 1
                 </div>
               </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "none",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-                <img
-                  style={{ height: "11px", width: "11px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedcommand-7.svg"
-                />
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
-                </div>
-                <img
-                  style={{
-                    height: "11px",
-                    width: "11px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedcommand.svg"
-                />
-              </div>
             </div>
             <div
               style={{
@@ -795,7 +624,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "8px 10px 8px 12px",
+                padding: "0px 10px 0px 12px",
               }}
             >
               <div
@@ -808,76 +637,21 @@ const SidebarMainItemsWrapper = () => {
                   gap: "8px",
                 }}
               >
-                <img
-                  style={{
-                    height: "16px",
-                    width: "16px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedmessage.svg"
-                />
                 <div
                   style={{
                     flex: "1",
                     position: "relative",
-                    lineHeight: "130%",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'black',
-                    fontSize:'17px'
+                    color:'#B4B4B8',
+                    fontSize:'17px',
+                    fontFamily:'inter'
                   }}
                 >
                   <MdArrowRight/> Pinned chat 2
                 </div>
               </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "none",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-                <img
-                  style={{ height: "11px", width: "11px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedcommand-8.svg"
-                />
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
-                </div>
-                <img
-                  style={{
-                    height: "11px",
-                    width: "11px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedcommand.svg"
-                />
-              </div>
             </div>
             <div
               style={{
@@ -889,7 +663,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "8px 10px 8px 12px",
+                padding: "0px 10px 0px 12px",
               }}
             >
               <div
@@ -902,16 +676,6 @@ const SidebarMainItemsWrapper = () => {
                   gap: "8px",
                 }}
               >
-                <img
-                  style={{
-                    height: "16px",
-                    width: "16px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedmessage.svg"
-                />
                 <div
                   style={{
                     flex: "1",
@@ -920,58 +684,14 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'black',
-                    fontSize:'17px'
+                    color:'#B4B4B8',
+                    fontSize:'17px',
+                    fontFamily:'inter'
                   }}
                 >
                   <MdArrowRight/> Pinned chat 3
                 </div>
               </div>
-              <div
-                style={{
-                  height: "29px",
-                  width: "37px",
-                  borderRadius: "4px",
-                  backgroundColor: "#fff",
-                  boxShadow: "0px 1px 3px rgba(25, 33, 61, 0.1)",
-                  border: "0.5px solid #f0f2f5",
-                  boxSizing: "border-box",
-                  display: "none",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "6px",
-                  gap: "4px",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#19213d",
-                }}
-              >
-                <img
-                  style={{ height: "11px", width: "11px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedcommand-9.svg"
-                />
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
-                </div>
-                <img
-                  style={{
-                    height: "11px",
-                    width: "11px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedcommand.svg"
-                />
-              </div>
             </div>
             <div
               style={{
@@ -983,7 +703,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "8px 10px 8px 12px",
+                padding: "0px 10px 0px 12px",
               }}
             >
               <div
@@ -996,16 +716,6 @@ const SidebarMainItemsWrapper = () => {
                   gap: "8px",
                 }}
               >
-                <img
-                  style={{
-                    height: "16px",
-                    width: "16px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedmessage.svg"
-                />
                 <div
                   style={{
                     flex: "1",
@@ -1014,8 +724,9 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'black',
-                    fontSize:'17px'
+                    color:'#B4B4B8',
+                    fontSize:'17px',
+                    fontFamily:'inter'
                   }}
                 >
                   <MdArrowRight/> Pinned chat 4
@@ -1041,30 +752,6 @@ const SidebarMainItemsWrapper = () => {
                   color: "#19213d",
                 }}
               >
-                <img
-                  style={{ height: "11px", width: "11px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedcommand-10.svg"
-                />
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
-                </div>
-                <img
-                  style={{
-                    height: "11px",
-                    width: "11px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedcommand.svg"
-                />
               </div>
             </div>
             <div
@@ -1095,24 +782,6 @@ const SidebarMainItemsWrapper = () => {
                   gap: "8px",
                 }}
               >
-                <img
-                  style={{ height: "16px", width: "16px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedmessage-4.svg"
-                />
-                <div
-                  style={{
-                    alignSelf: "stretch",
-                    flex: "1",
-                    position: "relative",
-                    lineHeight: "130%",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Link item
-                </div>
               </div>
               <div
                 style={{
@@ -1134,30 +803,6 @@ const SidebarMainItemsWrapper = () => {
                   color: "#19213d",
                 }}
               >
-                <img
-                  style={{ height: "11px", width: "11px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedcommand-11.svg"
-                />
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
-                </div>
-                <img
-                  style={{
-                    height: "11px",
-                    width: "11px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedcommand.svg"
-                />
               </div>
             </div>
             <div
@@ -1179,36 +824,6 @@ const SidebarMainItemsWrapper = () => {
             >
               <div
                 style={{
-                  height: "18px",
-                  width: "190px",
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                  gap: "8px",
-                }}
-              >
-                <img
-                  style={{ height: "16px", width: "16px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedmessage-5.svg"
-                />
-                <div
-                  style={{
-                    alignSelf: "stretch",
-                    flex: "1",
-                    position: "relative",
-                    lineHeight: "130%",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Link item
-                </div>
-              </div>
-              <div
-                style={{
                   height: "29px",
                   width: "37px",
                   borderRadius: "4px",
@@ -1227,52 +842,10 @@ const SidebarMainItemsWrapper = () => {
                   color: "#19213d",
                 }}
               >
-                <img
-                  style={{ height: "11px", width: "11px", position: "relative" }}
-                  alt=""
-                  src="/line-roundedcommand-12.svg"
-                />
-                <div
-                  style={{
-                    position: "relative",
-                    lineHeight: "130%",
-                    fontWeight: "500",
-                  }}
-                >
-                  1
-                </div>
-                <img
-                  style={{
-                    height: "11px",
-                    width: "11px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedcommand.svg"
-                />
+              
               </div>
             </div>
           </div>
-          <img
-            style={{
-              width: "100%",
-              height: "calc(100% - 89.1px)",
-              position: "absolute",
-              margin: "0",
-              top: "88.9px",
-              right: "-0.2px",
-              bottom: "0.2px",
-              left: "0.2px",
-              maxWidth: "100%",
-              overflow: "hidden",
-              maxHeight: "100%",
-              display: "none",
-              zIndex: "2",
-            }}
-            alt=""
-            src="/gradient.svg"
-          />
         </div>
         <div
           style={{
@@ -1302,8 +875,8 @@ const SidebarMainItemsWrapper = () => {
                 lineHeight: "130%",
                 textTransform: "uppercase",
                 fontWeight: "600",
-                color:'green',
-                fontSize:'22px'
+                color:'#C7C8CC',
+                fontSize:'18px'
               }}
             >
               Chat History
@@ -1371,7 +944,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "8px 10px 5px 12px",
+                padding: "2px 10px 0px 12px",
               }}
             >
               <div
@@ -1402,7 +975,7 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'black',
+                    color:'#B4B4B8',
                     fontSize:'18px'
                   }}
                 >
@@ -1465,7 +1038,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "1px 10px 5px 12px",
+                padding: "0px 10px 0px 12px",
               }}
             >
               <div
@@ -1496,7 +1069,7 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'black',
+                    color:'#B4B4B8',
                     fontSize:'18px'
                   }}
                 >
@@ -1559,7 +1132,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "1px 10px 5px 12px",
+                padding: "0px 10px 0px 12px",
               }}
             >
               <div
@@ -1590,7 +1163,7 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'black',
+                    color:'#B4B4B8',
                     fontSize:'18px'
                   }}
                 >
@@ -1638,7 +1211,7 @@ const SidebarMainItemsWrapper = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                padding: "1px 10px 5px 12px",
+                padding: "0px 10px 0px 12px",
               }}
             >
               <div
@@ -1659,7 +1232,7 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'black',
+                    color:'#B4B4B8',
                     fontSize:'18px'
                   }}
                 >
@@ -1728,7 +1301,7 @@ const SidebarMainItemsWrapper = () => {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
-                    color:'black',
+                    color:'#B4B4B8',
                     fontSize:'18px'
                   }}
                 >

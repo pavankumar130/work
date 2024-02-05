@@ -163,7 +163,7 @@ const ChatsLayoutV = () => {
                                 alignSelf: "stretch",
                                 borderRadius: "16px",
                                 backgroundColor: "#fff",
-                                boxShadow: "0px 2px 4px rgba(25, 33, 61, 0.08)",
+                                boxShadow: "2px 2px 2px rgba(25, 33, 61, 0.08)",
                                 border: "1px solid #e3e6ea",
                                 overflow: "hidden",
                                 display: "flex",
@@ -173,7 +173,8 @@ const ChatsLayoutV = () => {
                                 padding: "48px 32px",
                                 position: "relative",
                                 gap: "10px",
-                                backgroundColor: '#0D9276'
+                                background: 'rgb(255,255,255)',
+                                background: 'linear-gradient(180deg, rgba(255,255,255,1) 85%, rgba(0,22,255,1) 100%)' 
                             }}
                         >
                             <div
@@ -367,15 +368,6 @@ const ChatsLayoutV = () => {
                                                     gap: "8px",
                                                 }}
                                             >
-                                                <img
-                                                    style={{
-                                                        height: "15px",
-                                                        width: "15px",
-                                                        position: "relative",
-                                                    }}
-                                                    alt=""
-                                                    src="/filledsend-1.svg"
-                                                />
                                                 <div
                                                     style={{
                                                         alignSelf: "stretch",
