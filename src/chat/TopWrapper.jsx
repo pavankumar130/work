@@ -48,7 +48,7 @@ const TopWrapper = () => {
               fontWeight: "500",
             }}
           >
-            GPT 4 Model
+            Bharat AI
           </div>
           <div
             style={{
