@@ -150,13 +150,14 @@ export default function Result() {
         <div id="b_content">
           <main aria-label="Search Results">
             {
-              wiki.extract?.length ? (<div className="aiResult example" style={{ height: '40px' }}>
+              wiki.extract?.length ? (<div className="aiResult example" style={{ height: '40px',position:'relative' }}>
                 <h1 style={{ fontWeight: '700', color: 'black', fontSize: '20px' }}>
                   {wiki.title}
                 </h1>
                 <p style={{ color: 'black', marginTop: '10px', fontSize: '15px' }}>
                   {wiki.extract}
                 </p>
+                <p style={{position:'absolute',bottom:'0',right:'10px',fontSize:'13px'}}>Powered by BharatAI</p>
               </div>) : ''
             }
 
