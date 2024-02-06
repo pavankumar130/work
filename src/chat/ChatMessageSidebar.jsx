@@ -2,6 +2,7 @@ import React from "react";
 import SidebarMainItemsWrapper from "./SidebarMainItemsWrapper";
 import TopWrapper from "./TopWrapper";
 import FrameComponent from "./FrameComponent";
+import {FaUser,FaRobot} from 'react-icons/fa'
 
 const ChatMessageSidebar = () => {
   return (
@@ -56,11 +57,6 @@ const ChatMessageSidebar = () => {
             gap: "8px",
           }}
         >
-          <img
-            style={{ height: "15px", width: "15px", position: "relative" }}
-            alt=""
-            src="/line-roundedplus.svg"
-          />
           <div
             style={{
               position: "relative",
@@ -70,16 +66,6 @@ const ChatMessageSidebar = () => {
           >
             Start new chat
           </div>
-          <img
-            style={{
-              height: "15px",
-              width: "15px",
-              position: "relative",
-              display: "none",
-            }}
-            alt=""
-            src="/line-roundedarrow-rigth.svg"
-          />
         </div>
       </div>
       <main
@@ -212,17 +198,6 @@ const ChatMessageSidebar = () => {
                     Search for chats...
                   </div>
                 </div>
-                <img
-                  style={{
-                    height: "12px",
-                    width: "12px",
-                    position: "relative",
-                    display: "none",
-                    zIndex: "2",
-                  }}
-                  alt=""
-                  src="/line-roundedsearch.svg"
-                />
                 <div
                   style={{
                     height: "32px",
@@ -243,16 +218,6 @@ const ChatMessageSidebar = () => {
                     color: "#fff",
                   }}
                 >
-                  <img
-                    style={{
-                      height: "12px",
-                      width: "12px",
-                      position: "relative",
-                      display: "none",
-                    }}
-                    alt=""
-                    src="/line-roundedsearch.svg"
-                  />
                   <div
                     style={{
                       alignSelf: "stretch",
@@ -263,15 +228,6 @@ const ChatMessageSidebar = () => {
                   >
                     Default
                   </div>
-                  <img
-                    style={{
-                      height: "10px",
-                      width: "10px",
-                      position: "relative",
-                    }}
-                    alt=""
-                    src="/line-roundedarrow-rigth.svg"
-                  />
                 </div>
                 <div
                   style={{
@@ -290,15 +246,6 @@ const ChatMessageSidebar = () => {
                     color: "#19213d",
                   }}
                 >
-                  <img
-                    style={{
-                      height: "11px",
-                      width: "11px",
-                      position: "relative",
-                    }}
-                    alt=""
-                    src="/line-roundedcommand.svg"
-                  />
                   <div
                     style={{
                       alignSelf: "stretch",
@@ -309,16 +256,6 @@ const ChatMessageSidebar = () => {
                   >
                     K
                   </div>
-                  <img
-                    style={{
-                      height: "11px",
-                      width: "11px",
-                      position: "relative",
-                      display: "none",
-                    }}
-                    alt=""
-                    src="/line-roundedcommand.svg"
-                  />
                 </div>
               </div>
             </div>
@@ -351,15 +288,6 @@ const ChatMessageSidebar = () => {
                   gap: "4px",
                 }}
               >
-                <img
-                  style={{
-                    height: "12px",
-                    width: "12px",
-                    position: "relative",
-                  }}
-                  alt=""
-                  src="/line-roundedsettings-1.svg"
-                />
                 <div
                   style={{
                     position: "relative",
@@ -369,16 +297,6 @@ const ChatMessageSidebar = () => {
                 >
                   Chat settings
                 </div>
-                <img
-                  style={{
-                    height: "10px",
-                    width: "10px",
-                    position: "relative",
-                    display: "none",
-                  }}
-                  alt=""
-                  src="/line-roundedarrow-rigth.svg"
-                />
               </div>
             </div>
           </div>
@@ -398,34 +316,6 @@ const ChatMessageSidebar = () => {
               color: "#19213c",
             }}
           >
-            <div
-              style={{
-                width: "1064.9px",
-                height: "1064.9px",
-                position: "absolute",
-                margin: "0",
-                right: "-210.1px",
-                bottom: "-901.3px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                zIndex: "0",
-              }}
-            >
-              <img
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                  position: "absolute",
-                  left: "0px",
-                  top: "0px",
-                  transform: "scale(1.774)",
-                }}
-                alt=""
-                src="/background-chat.svg"
-              />
-            </div>
             <div
               style={{
                 alignSelf: "stretch",
@@ -516,19 +406,7 @@ const ChatMessageSidebar = () => {
                       justifyContent: "center",
                     }}
                   >
-                    <img
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                        position: "relative",
-                        overflow: "hidden",
-                        flexShrink: "0",
-                        objectFit: "cover",
-                      }}
-                      loading="eager"
-                      alt=""
-                      src="/avatar01-1@2x.png"
-                    />
+                    <FaUser/> 
                   </div>
                   <div
                     style={{
@@ -612,36 +490,6 @@ const ChatMessageSidebar = () => {
                             gap: "16px",
                           }}
                         >
-                          <img
-                            style={{
-                              height: "14px",
-                              width: "14px",
-                              position: "relative",
-                              minHeight: "14px",
-                            }}
-                            alt=""
-                            src="/line-roundedpen.svg"
-                          />
-                          <img
-                            style={{
-                              height: "14px",
-                              width: "14px",
-                              position: "relative",
-                              minHeight: "14px",
-                            }}
-                            alt=""
-                            src="/line-roundedbook-1.svg"
-                          />
-                          <img
-                            style={{
-                              height: "14px",
-                              width: "14px",
-                              position: "relative",
-                              minHeight: "14px",
-                            }}
-                            alt=""
-                            src="/line-roundeddots.svg"
-                          />
                         </div>
                       </div>
                       <div
@@ -695,15 +543,6 @@ const ChatMessageSidebar = () => {
                             gap: "8px",
                           }}
                         >
-                          <img
-                            style={{
-                              height: "20px",
-                              width: "20px",
-                              position: "relative",
-                            }}
-                            alt=""
-                            src="/filledplay.svg"
-                          />
                           <div
                             style={{
                               display: "flex",
@@ -1353,19 +1192,7 @@ const ChatMessageSidebar = () => {
                       justifyContent: "center",
                     }}
                   >
-                    <img
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                        position: "relative",
-                        overflow: "hidden",
-                        flexShrink: "0",
-                        objectFit: "cover",
-                      }}
-                      loading="eager"
-                      alt=""
-                      src="/avatar02@2x.png"
-                    />
+                    <FaRobot style={{fontSize:'20px'}}/>
                   </div>
                   <div
                     style={{

@@ -30,11 +30,12 @@ const SidebarMainItemsWrapper = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
-            justifyContent: "flex-start",
+            justifyContent: "center",
             gap: "12px",
             fontSize: "14px",
             color: "#19213d",
-            height:"50px"
+            height:"50px",
+            marginLeft:'25px'
           }}
         >
           <div

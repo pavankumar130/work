@@ -6,8 +6,8 @@ import axios from 'axios'
 import Header from '../Commons/Header'
 import image from '../assets/4.png'
 import RelatedSearch from './RelatedSearch'
-import Pagination from './Pagination'
 import NoDataFound from './NoDataFound'
+import ailogo from '../assets/bharatAI.png'
 
 import { MdVerified } from 'react-icons/md'
 
@@ -157,7 +157,7 @@ export default function Result() {
                 <p style={{ color: 'black', marginTop: '10px', fontSize: '15px' }}>
                   {wiki.extract}
                 </p>
-                <p style={{position:'absolute',bottom:'0',right:'10px',fontSize:'13px'}}>Powered by BharatAI</p>
+                <p style={{textAlign:'right',fontSize:'15px'}}>Powered by <img src={ailogo} style={{height:'65px',width:'80px'}}/></p>
               </div>) : ''
             }
 

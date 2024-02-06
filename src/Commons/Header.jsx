@@ -3,10 +3,11 @@ import { useNavigate, useParams } from 'react-router-dom'
 import mainLogo from '../BingVideo/google.png'
 import './Style.css'
 import Avatar from 'react-avatar'
-import { FaMedal } from 'react-icons/fa'
+import { CgProfile } from "react-icons/cg";
 import { ImImages, ImNewspaper } from 'react-icons/im'
 import { BiSolidVideos } from 'react-icons/bi'
 import { MdOutlineSettings, MdSettings } from 'react-icons/md'
+import { TbGridDots } from 'react-icons/tb'
 
 const Header = ({ page }) => {
   const { name } = useParams()
@@ -244,7 +245,7 @@ const Header = ({ page }) => {
               </svg>
               All
             </a></li>
-            <li style={{marginLeft:'1rem'}}><a class="nav-link" href={'/chat'}>
+            <li style={{ marginLeft: '1rem' }}><a class="nav-link" href={'/chat'}>
               <svg
                 width={16}
                 height={16}
@@ -261,19 +262,29 @@ const Header = ({ page }) => {
               </svg>
               Chat
             </a></li>
-            <li style={{marginLeft:'1rem'}}><a class="nav-link  " href={`../images/${name}`}>
-              <ImImages style={{ color: '#174AE4', opacity: '0.7'}} /> Images
+            <li style={{ marginLeft: '1rem' }}><a class="nav-link  " href={`../images/${name}`}>
+              <ImImages style={{ color: '#174AE4', opacity: '0.7' }} /> Images
             </a></li>
-            <li style={{marginLeft:'1rem'}}><a class="nav-link  " href={`../videos/${name}`}>
-              <BiSolidVideos style={{ color: '#174AE4', opacity: '0.7'}} /> Videos
+            <li style={{ marginLeft: '1rem' }}><a class="nav-link  " href={`../videos/${name}`}>
+              <BiSolidVideos style={{ color: '#174AE4', opacity: '0.7' }} /> Videos
             </a></li>
-            <li style={{marginLeft:'1rem'}}><a class="nav-link  " href={`../news/${name}`}>
+            <li style={{ marginLeft: '1rem' }}><a class="nav-link  " href={`../news/${name}`}>
               <ImNewspaper style={{ color: '#174AE4', opacity: '0.7' }} /> News
             </a></li>
-            <li style={{marginLeft:'1rem'}}><a class="nav-link  " href={``}>
-              <MdSettings style={{ color: '#174AE4', opacity: '0.7'}} /> Settings
+            <li style={{ marginLeft: '1rem' }}><a class="nav-link  " href={``}>
+              <MdSettings style={{ color: '#174AE4', opacity: '0.7' }} /> Settings
             </a></li>
           </ul>
+        </div>
+        <div style={{ textAlign: 'right', position: 'absolute', top: '80px', right: '120px' }}>
+          <a className="d-none d-lg-inline-block last-child" href="/login" style={{ display: 'flex', alignItems: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <span><TbGridDots style={{ marginRight: '20px', fontSize: '25px' }} /></span>
+
+              <CgProfile style={{ fontSize: '25px', color: '#abb8c3' }} />
+              <span style={{ marginLeft: '8px', fontSize: '19px' }}>Log In</span>
+            </div>
+          </a>
         </div>
       </header>
     </>
