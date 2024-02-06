@@ -376,16 +376,6 @@ const ChatsLayoutV = () => {
                                                 >
                                                     Send message
                                                 </div>
-                                                <img
-                                                    style={{
-                                                        height: "15px",
-                                                        width: "15px",
-                                                        position: "relative",
-                                                        display: "none",
-                                                    }}
-                                                    alt=""
-                                                    src="/line-roundedarrow-rigth.svg"
-                                                />
                                             </div>
                                         </div>
                                     </div>
@@ -466,15 +456,6 @@ const ChatsLayoutV = () => {
                                                 gap: "4px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "13px",
-                                                    width: "13px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsearch-2.svg"
-                                            />
                                             <input
                                                 style={{
                                                     width: "calc(100% - 13px)",
@@ -496,16 +477,6 @@ const ChatsLayoutV = () => {
                                                 type="text"
                                             />
                                         </div>
-                                        <img
-                                            style={{
-                                                height: "12px",
-                                                width: "12px",
-                                                position: "relative",
-                                                display: "none",
-                                            }}
-                                            alt=""
-                                            src="/line-roundedsearch.svg"
-                                        />
                                         <div
                                             style={{
                                                 height: "32px",
@@ -524,16 +495,6 @@ const ChatsLayoutV = () => {
                                                 gap: "4px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "12px",
-                                                    width: "12px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsearch.svg"
-                                            />
                                             <div
                                                 style={{
                                                     alignSelf: "stretch",
@@ -544,15 +505,6 @@ const ChatsLayoutV = () => {
                                             >
                                                 Default
                                             </div>
-                                            <img
-                                                style={{
-                                                    height: "10px",
-                                                    width: "10px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedarrow-rigth-2.svg"
-                                            />
                                         </div>
                                         <div
                                             style={{
@@ -570,15 +522,6 @@ const ChatsLayoutV = () => {
                                                 color: "#19213d",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedcommand-20.svg"
-                                            />
                                             <div
                                                 style={{
                                                     alignSelf: "stretch",
@@ -589,16 +532,6 @@ const ChatsLayoutV = () => {
                                             >
                                                 K
                                             </div>
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedcommand.svg"
-                                            />
                                         </div>
                                     </div>
                                     <div
@@ -628,28 +561,10 @@ const ChatsLayoutV = () => {
                                                 gap: "6px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "12px",
-                                                    width: "12px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedchip.svg"
-                                            />
                                             <div style={{ position: "relative", lineHeight: "130%" }}>
                                                 Model
                                             </div>
                                         </div>
-                                        <img
-                                            style={{
-                                                height: "14px",
-                                                width: "14px",
-                                                position: "relative",
-                                            }}
-                                            alt=""
-                                            src="/line-roundedchevron-down-1.svg"
-                                        />
                                     </div>
                                     <div
                                         style={{
@@ -678,28 +593,10 @@ const ChatsLayoutV = () => {
                                                 gap: "6px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "12px",
-                                                    width: "12px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedfilters.svg"
-                                            />
                                             <div style={{ position: "relative", lineHeight: "130%" }}>
                                                 Sort by
                                             </div>
                                         </div>
-                                        <img
-                                            style={{
-                                                height: "14px",
-                                                width: "14px",
-                                                position: "relative",
-                                            }}
-                                            alt=""
-                                            src="/line-roundedchevron-down-2.svg"
-                                        />
                                     </div>
                                 </div>
                             </div>
@@ -779,16 +676,6 @@ const ChatsLayoutV = () => {
                                                 color: "#19213d",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                             <div
                                                 style={{
                                                     flex: "1",
@@ -799,16 +686,6 @@ const ChatsLayoutV = () => {
                                             >
                                                 GPT 4
                                             </div>
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                         </div>
                                         <div
                                             style={{
@@ -822,16 +699,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "40px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                loading="eager"
-                                                alt=""
-                                                src="/icon.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -854,15 +721,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "80px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-1.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -873,16 +731,6 @@ const ChatsLayoutV = () => {
                                                 1 min ago
                                             </div>
                                         </div>
-                                        <img
-                                            style={{
-                                                height: "14px",
-                                                width: "14px",
-                                                position: "relative",
-                                            }}
-                                            loading="eager"
-                                            alt=""
-                                            src="/line-roundeddots.svg"
-                                        />
                                     </div>
                                 </div>
                                 <div
@@ -947,16 +795,6 @@ const ChatsLayoutV = () => {
                                                 color: "#19213d",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                             <div
                                                 style={{
                                                     flex: "1",
@@ -967,16 +805,6 @@ const ChatsLayoutV = () => {
                                             >
                                                 Llama 2
                                             </div>
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                         </div>
                                         <div
                                             style={{
@@ -990,15 +818,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "40px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-2.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -1021,15 +840,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "80px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-3.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -1040,15 +850,6 @@ const ChatsLayoutV = () => {
                                                 5 min ago
                                             </div>
                                         </div>
-                                        <img
-                                            style={{
-                                                height: "14px",
-                                                width: "14px",
-                                                position: "relative",
-                                            }}
-                                            alt=""
-                                            src="/line-roundeddots-1.svg"
-                                        />
                                     </div>
                                 </div>
                                 <div
@@ -1112,16 +913,6 @@ const ChatsLayoutV = () => {
                                                 color: "#19213d",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                             <div
                                                 style={{
                                                     flex: "1",
@@ -1132,16 +923,6 @@ const ChatsLayoutV = () => {
                                             >
                                                 Mistral 8x7B
                                             </div>
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                         </div>
                                         <div
                                             style={{
@@ -1155,15 +936,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "40px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-4.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -1185,15 +957,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "80px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-5.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -1204,15 +967,6 @@ const ChatsLayoutV = () => {
                                                 22 min ago
                                             </div>
                                         </div>
-                                        <img
-                                            style={{
-                                                height: "14px",
-                                                width: "14px",
-                                                position: "relative",
-                                            }}
-                                            alt=""
-                                            src="/line-roundeddots-2.svg"
-                                        />
                                     </div>
                                 </div>
                                 <div
@@ -1277,16 +1031,6 @@ const ChatsLayoutV = () => {
                                                 color: "#19213d",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                             <div
                                                 style={{
                                                     flex: "1",
@@ -1297,16 +1041,6 @@ const ChatsLayoutV = () => {
                                             >
                                                 GPT 3.5
                                             </div>
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                         </div>
                                         <div
                                             style={{
@@ -1320,15 +1054,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "40px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-6.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -1351,15 +1076,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "80px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-7.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -1370,15 +1086,6 @@ const ChatsLayoutV = () => {
                                                 1 hr ago
                                             </div>
                                         </div>
-                                        <img
-                                            style={{
-                                                height: "14px",
-                                                width: "14px",
-                                                position: "relative",
-                                            }}
-                                            alt=""
-                                            src="/line-roundeddots-3.svg"
-                                        />
                                     </div>
                                 </div>
                                 <div
@@ -1443,16 +1150,6 @@ const ChatsLayoutV = () => {
                                                 color: "#19213d",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                             <div
                                                 style={{
                                                     flex: "1",
@@ -1463,16 +1160,6 @@ const ChatsLayoutV = () => {
                                             >
                                                 GPT 4
                                             </div>
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                         </div>
                                         <div
                                             style={{
@@ -1486,15 +1173,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "40px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-8.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -1517,15 +1195,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "80px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-9.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -1536,15 +1205,6 @@ const ChatsLayoutV = () => {
                                                 2 hrs ago
                                             </div>
                                         </div>
-                                        <img
-                                            style={{
-                                                height: "14px",
-                                                width: "14px",
-                                                position: "relative",
-                                            }}
-                                            alt=""
-                                            src="/line-roundeddots-4.svg"
-                                        />
                                     </div>
                                 </div>
                                 <div
@@ -1609,16 +1269,6 @@ const ChatsLayoutV = () => {
                                                 color: "#19213d",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                             <div
                                                 style={{
                                                     flex: "1",
@@ -1629,16 +1279,6 @@ const ChatsLayoutV = () => {
                                             >
                                                 Llama 2
                                             </div>
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                         </div>
                                         <div
                                             style={{
@@ -1652,15 +1292,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "40px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-10.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -1683,15 +1314,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "80px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-11.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -1702,15 +1324,6 @@ const ChatsLayoutV = () => {
                                                 3 hrs ago
                                             </div>
                                         </div>
-                                        <img
-                                            style={{
-                                                height: "14px",
-                                                width: "14px",
-                                                position: "relative",
-                                            }}
-                                            alt=""
-                                            src="/line-roundeddots-5.svg"
-                                        />
                                     </div>
                                 </div>
                                 <div
@@ -1776,16 +1389,6 @@ const ChatsLayoutV = () => {
                                                 color: "#19213d",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                             <div
                                                 style={{
                                                     flex: "1",
@@ -1796,16 +1399,6 @@ const ChatsLayoutV = () => {
                                             >
                                                 Mistral 7B
                                             </div>
-                                            <img
-                                                style={{
-                                                    height: "11px",
-                                                    width: "11px",
-                                                    position: "relative",
-                                                    display: "none",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedsettings.svg"
-                                            />
                                         </div>
                                         <div
                                             style={{
@@ -1819,15 +1412,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "40px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-12.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -1848,15 +1432,6 @@ const ChatsLayoutV = () => {
                                                 minWidth: "80px",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "14px",
-                                                    width: "14px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/icon-13.svg"
-                                            />
                                             <div
                                                 style={{
                                                     position: "relative",
@@ -1867,15 +1442,6 @@ const ChatsLayoutV = () => {
                                                 4 hrs ago
                                             </div>
                                         </div>
-                                        <img
-                                            style={{
-                                                height: "14px",
-                                                width: "14px",
-                                                position: "relative",
-                                            }}
-                                            alt=""
-                                            src="/line-roundeddots-6.svg"
-                                        />
                                     </div>
                                 </div>
                             </div>
