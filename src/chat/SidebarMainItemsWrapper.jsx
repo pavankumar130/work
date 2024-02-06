@@ -1,8 +1,7 @@
 import React from "react";
-import logo from '../assets/google.png'
+import logo from '../assets/bharatAI.png'
 import {FaRocketchat} from 'react-icons/fa'
 import {MdLibraryBooks,MdArrowRight} from 'react-icons/md'
-import {GrAppsRounded} from 'react-icons/gr'
 import {BsChatSquare} from 'react-icons/bs'
 import {BiLogoPlayStore} from 'react-icons/bi'
 
@@ -35,6 +34,7 @@ const SidebarMainItemsWrapper = () => {
             gap: "12px",
             fontSize: "14px",
             color: "#19213d",
+            height:"50px"
           }}
         >
           <div
@@ -70,11 +70,10 @@ const SidebarMainItemsWrapper = () => {
                 <div
                   style={{
                     position: "relative",
-                    lineHeight: "130%",
                     fontWeight: "500",
                   }}
                 >
-                  <img src={logo} alt="Bharat Tech" />
+                  <img src={logo} width='140px' height='140px' alt="Bharat Tech" />
                 </div>
               </div>
             </div>

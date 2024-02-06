@@ -173,7 +173,6 @@ const ChatsLayoutV = () => {
                                 padding: "48px 32px",
                                 position: "relative",
                                 gap: "10px",
-                                background: 'rgb(255,255,255)',
                                 background: 'linear-gradient(180deg, rgba(255,255,255,1) 85%, rgba(0,22,255,1) 100%)' 
                             }}
                         >
@@ -217,7 +216,6 @@ const ChatsLayoutV = () => {
                                             position: "relative",
                                             fontSize: "14px",
                                             lineHeight: "150%",
-                                            color: "#666f8d",
                                             color: 'black'
                                         }}
                                     >

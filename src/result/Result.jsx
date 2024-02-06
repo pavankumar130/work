@@ -9,43 +9,43 @@ import RelatedSearch from './RelatedSearch'
 import Pagination from './Pagination'
 import NoDataFound from './NoDataFound'
 
-import {MdVerified} from 'react-icons/md'
+import { MdVerified } from 'react-icons/md'
 
 function WikiComponent(props) {
-  const slicedExtract = props?.extract?.slice(0,200);
+  const slicedExtract = props?.extract?.slice(0, 200);
   console.log(props);
   return (
-    <div className="wiki_container" style={{width:'23rem',height:'450px'}}>
-      <img className="wiki_image_content" src={props.image} alt={props.title} style={{width:'100%',height:'45%',borderTopLeftRadius:'10px',borderTopRightRadius:'10px'}}/>{' '}
+    <div className="wiki_container" style={{ width: '23rem', height: '450px' }}>
+      <img className="wiki_image_content" src={props.image} alt={props.title} style={{ width: '100%', height: '45%', borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }} />{' '}
       <div
         className="wiki_heading"
-        style={{ textAlign: 'left', marginBottom: '10px',marginLeft:'8px'}}
+        style={{ textAlign: 'left', marginBottom: '10px', marginLeft: '8px' }}
       >
         <div
           className="main_heading"
-          style={{ marginTop: '20px', marginBottom: '8px',padding:'0 8px' }}
+          style={{ marginTop: '20px', marginBottom: '8px', padding: '0 8px' }}
         >
-          <h2 style={{ fontSize: '28px'}}>
+          <h2 style={{ fontSize: '28px' }}>
             <span>{props.title}</span>
           </h2>
         </div>
         <div
           className="sun_heading"
-          style={{ fontSize: '18px', color: 'chocolate',padding:'0 8px' }}
+          style={{ fontSize: '18px', color: 'chocolate', padding: '0 8px' }}
         >
-          <span style={{color:'#888888',fontFamily:'DDG_ProximaNova'}}>{props.description}</span>
+          <span style={{ color: '#888888', fontFamily: 'DDG_ProximaNova' }}>{props.description}</span>
         </div>
       </div>
       <div
         className="wiki_details"
-        style={{ textAlign: 'left',padding:'0 8px',marginLeft:'8px' }}
+        style={{ textAlign: 'left', padding: '0 8px', marginLeft: '8px' }}
       >
-        <span style={{lineHeight:'23px'}}>
+        <span style={{ lineHeight: '23px' }}>
           {slicedExtract}{' '}
           <a href={props?.link} style={{ textDecoration: 'none' }}>
-          {props?.extract?.length > 200 ? "...   " : "    "}
-          read more
-</a>
+            {props?.extract?.length > 200 ? "...   " : "    "}
+            read more
+          </a>
 
         </span>
       </div>
@@ -55,10 +55,10 @@ function WikiComponent(props) {
 function ResultComponent(props) {
   return (
     <li className="b_algo">
-      <div className="b_title" style={{lineHeight:'0'}}>
-        <h2 style={{marginBottom : '0'}}>
-          <a style={{color:'#1A0DAB',opacity:'0.8',fontWeight:'normal',fontSize:'18px'}} href={props.link} h="ID=SERP,5292.1">
-            {props.title} {props.index < 10 ? <MdVerified style={{fontSize:'17px'}}/>:''}
+      <div className="b_title" style={{ lineHeight: '0' }}>
+        <h2 style={{ marginBottom: '0' }}>
+          <a style={{ color: '#1A0DAB', opacity: '0.8', fontWeight: 'normal', fontSize: '18px' }} href={props.link} h="ID=SERP,5292.1">
+            {props.title} {props.index < 10 ? <MdVerified style={{ fontSize: '17px' }} /> : ''}
           </a>
         </h2>
       </div>
@@ -69,7 +69,7 @@ function ResultComponent(props) {
             u="3|5094|4802937594642996|jXaG3jOqUP-IH6J3UdURN5ccWGAXP6ee"
             tabIndex={0}
           >
-            <cite style={{fontSize:'14px'}}>{props.displayLink}</cite>
+            <cite style={{ fontSize: '14px' }}>{props.displayLink}</cite>
             <span className="c_tlbxTrg">
               <span
                 className="c_tlbxH"
@@ -79,7 +79,7 @@ function ResultComponent(props) {
             </span>
           </div>
           <p className="b_lineclamp2 b_algoSlug">
-            <span className="news_dt" style={{fontSize:'14px',fontFamily: 'Raleway, sans-serif',color:'#494949'}} >
+            <span className="news_dt" style={{ fontSize: '14px', fontFamily: 'Raleway, sans-serif', color: '#494949' }} >
               {props.snippet}
             </span>
           </p>
@@ -93,6 +93,7 @@ export default function Result() {
   const [Data, setData] = useState([])
   const [Totalresults, setDatatotal] = useState([])
   const [wiki, SetwikiData] = useState([])
+  const [remResults, setremResults] = useState([])
   const { name } = useParams()
 
   useEffect(() => {
@@ -106,7 +107,7 @@ export default function Result() {
       }
     }
 
-    getWikiData(); 
+    getWikiData();
   }, []);
 
   useEffect(() => {
@@ -120,26 +121,43 @@ export default function Result() {
       }
     }
 
-    getSearchData(); 
+    getSearchData();
+  }, []);
+
+  useEffect(() => {
+    async function getSearchData() {
+
+      for (let i = 11; i <= 31; i = i + 10) {
+        try {
+          const response = await axios.get(`https://www.googleapis.com/customsearch/v1?key=AIzaSyAPe5RBxcHm1VyIEUVu1dRQO5M4W4EnYrI&cx=6563eb05187c74b28&q=${name}&start=${i}`);
+          setremResults(prevData => [...prevData, ...response.data.items])
+          console.log(response.data.items);
+        } catch (error) {
+          console.error('Error fetching data from Wikipedia:', error);
+        }
+      }
+    }
+
+    getSearchData();
   }, []);
 
   return (
     <>
       <div>
         <Header page={'result'} />
-        
+
         {/*Wikipedia header*/}
         <div id="b_content">
           <main aria-label="Search Results">
             {
-              wiki.extract?.length? (<div className="aiResult example" style={{height:'40px'}}>
-              <h1 style={{fontWeight:'700',color:'black',fontSize:'20px'}}>
-                {wiki.title}
-              </h1>
-              <p style={{color:'black',marginTop:'10px',fontSize:'15px'}}>
-                {wiki.extract}
-              </p>
-            </div>):''
+              wiki.extract?.length ? (<div className="aiResult example" style={{ height: '40px' }}>
+                <h1 style={{ fontWeight: '700', color: 'black', fontSize: '20px' }}>
+                  {wiki.title}
+                </h1>
+                <p style={{ color: 'black', marginTop: '10px', fontSize: '15px' }}>
+                  {wiki.extract}
+                </p>
+              </div>) : ''
             }
 
 
@@ -150,19 +168,31 @@ export default function Result() {
             >
               <ol id="b_results" className>
                 {
-                  Totalresults? Totalresults?.map((results,index) => (
+                  Totalresults ? Totalresults?.map((results, index) => (
                     <ResultComponent
                       title={results.title}
                       link={results.link}
                       displayLink={results.displayLink}
                       snippet={results.snippet}
-                      index = {index}
+                      index={index}
                     />
-                  )):<NoDataFound/>
+                  )) : <NoDataFound />
                 }
 
-                <RelatedSearch title={wiki.title} name = {name}/>
-                <Pagination title={wiki.title} />
+                <RelatedSearch title={wiki.title} name={name} />
+                {/* <Pagination title={wiki.title} /> */}
+
+                {
+                  remResults ? remResults?.map((results, index) => (
+                    <ResultComponent
+                      title={results.title}
+                      link={results.link}
+                      displayLink={results.displayLink}
+                      snippet={results.snippet}
+                      index={index}
+                    />
+                  )) : <NoDataFound />
+                }
 
                 <li id="mfa_root" className="b_fabHide fabcolapse">
                   <div className="b_ds5">
@@ -185,13 +215,13 @@ export default function Result() {
 
               {/* image={wiki.originalimage.source} */}
               {
-                wiki?.extract?.length? (<WikiComponent
+                wiki?.extract?.length ? (<WikiComponent
                   title={wiki?.title}
                   description={wiki?.description}
                   extract={wiki?.extract}
-                  image = {wiki?.originalimage?.source} 
-                  link = {wiki?.content_urls?.desktop?.page}
-                />):''
+                  image={wiki?.originalimage?.source}
+                  link={wiki?.content_urls?.desktop?.page}
+                />) : ''
               }
             </div>
           </main>
