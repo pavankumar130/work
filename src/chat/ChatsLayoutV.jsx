@@ -70,16 +70,6 @@ const ChatsLayoutV = () => {
                     >
                         Start new chat
                     </div>
-                    <img
-                        style={{
-                            height: "15px",
-                            width: "15px",
-                            position: "relative",
-                            display: "none",
-                        }}
-                        alt=""
-                        src="/line-roundedarrow-rigth.svg"
-                    />
                 </button>
                 </a>
             </div>
@@ -118,34 +108,6 @@ const ChatsLayoutV = () => {
                         fontFamily: "Inter",
                     }}
                 >
-                    <div
-                        style={{
-                            height: "1064.9px",
-                            width: "1064.9px",
-                            position: "absolute",
-                            margin: "0",
-                            top: "542px",
-                            left: "34.2px",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            zIndex: "0",
-                        }}
-                    >
-                        <img
-                            style={{
-                                height: "100%",
-                                width: "100%",
-                                objectFit: "contain",
-                                position: "absolute",
-                                left: "0px",
-                                top: "0px",
-                                transform: "scale(1.774)",
-                            }}
-                            alt=""
-                            src="/background-chat.svg"
-                        />
-                    </div>
                     <div
                         style={{
                             width: "774px",
@@ -260,15 +222,6 @@ const ChatsLayoutV = () => {
                                                 whiteSpace: "nowrap",
                                             }}
                                         >
-                                            <img
-                                                style={{
-                                                    height: "12px",
-                                                    width: "12px",
-                                                    position: "relative",
-                                                }}
-                                                alt=""
-                                                src="/line-roundedlightning.svg"
-                                            />
                                             <div
                                                 style={{
                                                     height: "16px",

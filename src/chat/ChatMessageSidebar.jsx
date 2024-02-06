@@ -179,15 +179,6 @@ const ChatMessageSidebar = () => {
                     zIndex: "1",
                   }}
                 >
-                  <img
-                    style={{
-                      height: "13px",
-                      width: "13px",
-                      position: "relative",
-                    }}
-                    alt=""
-                    src="/line-roundedsearch.svg"
-                  />
                   <div
                     style={{
                       alignSelf: "stretch",
