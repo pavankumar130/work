@@ -18,7 +18,7 @@ function BingVideo() {
         const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=200&q=${name}&key=AIzaSyBgp3Q7UJ7630cKu0yjXi8c_Dp7mKwAUC8`);
         const data = await response.json();
         const dataItems = data?.items? data.items:[];
-        setimgData(data.items);
+        setimgData(data?.items ? data.items : []);
         setToken(data.nextPageToken);
 
         for(let i = 0 ; i < 3 ; i++)
@@ -27,8 +27,8 @@ function BingVideo() {
            const data2 = await response2.json();
 
            const data2Items = data2?.items? data2.items : [];
-           setimgData(prevData => [...prevData, ...data2Items]);
-           setToken(data2.nextPageToken);
+          setimgData(prevData => [...prevData, ...data2Items]);
+           setToken(data2?.nextPageToken ? data2.nextPageToken : '');
         }
       } catch (error) {
         console.error(error);
@@ -90,7 +90,7 @@ function BingVideo() {
             data-layout="row"
           >
             {
-              imgData?.length > 0 ? imgData?.map((val) => {
+              imgData.length > 0 ? imgData.map((val) => {
                 return (
                   <ImageCard
                     channelTitle={val.channelTitle}
@@ -100,12 +100,14 @@ function BingVideo() {
                   />
                 );
               }) : altvideo.map((val) => {
-                <ImageCard
+                 return (
+                  <ImageCard
                     channelTitle={val.title}
                     link={val.content}
                     imgurl={val.images.small}
                     info={val.description}
                   />
+                 )
               })
             }
           </div>
