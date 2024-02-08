@@ -3,12 +3,13 @@ import './Style.css'
 import Container from './Container'
 import { useParams } from 'react-router-dom'
 import Header from '../Commons/Header'
-import {BingData} from './BingData.js';
+import axios from 'axios'
 import ImageCard from './ImageCard.jsx'
 
 function BingVideo() {
   const { name } = useParams();
   const [imgData, setimgData] = useState([]);
+  const [altvideo,setAltVideo] = useState([])
   const [token,setToken] = useState('');
 
   useEffect(() => {
@@ -34,6 +35,20 @@ function BingVideo() {
       }
     };
     fetchImages();
+  }, []);
+
+  useEffect(() => {
+    async function getVideos() {
+      try {
+        const response = await axios.get(`http://127.0.0.1:8000/videos/${name}`);
+        console.log(response.data);
+        setAltVideo(response.data);
+      } catch (error) {
+        console.error('Error fetching data from Wikipedia:', error);
+      }
+    }
+
+    getVideos();
   }, []);
 
   return (
@@ -84,7 +99,14 @@ function BingVideo() {
                     info={val.snippet.title}
                   />
                 );
-              }) : null
+              }) : altvideo.map((val) => {
+                <ImageCard
+                    channelTitle={val.title}
+                    link={val.content}
+                    imgurl={val.images.small}
+                    info={val.description}
+                  />
+              })
             }
           </div>
           
