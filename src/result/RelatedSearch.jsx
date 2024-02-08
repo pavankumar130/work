@@ -1,45 +1,25 @@
 import React, { useState, useEffect } from 'react'
 import Result from './Result'
+import axios from 'axios'
 
 const RelatedSearch = ({ title, name }) => {
   const [data, setData] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState(null)
+  const [suggest,setSuggest] = useState([])
 
-  const relatedData = [
-    {
-      subtitle: "news today",
-      link: ""
-    },
-    {
-      subtitle: "live today",
-      link: "",
-    },
-    {
-      subtitle: "live speech today",
-      link: "",
-    },
-    {
-      subtitle: "wikipedia",
-      link: "",
-    },
-    {
-      subtitle: "youtube",
-      link: "",
-    },
-    {
-      subtitle: "house",
-      link: "",
-    },
-    {
-      subtitle: "history",
-      link: "",
-    },
-    {
-      subtitle: "biography",
-      link: "",
+  useEffect(() => {
+    async function getSuggestions() {
+      try {
+        const response = await axios.get(`http://127.0.0.1:8000/suggestion/${name}`);
+        console.log(response.data);
+        setSuggest(response.data)
+      } catch (error) {
+        console.error('Error fetching data from Wikipedia:', error);
+      }
     }
-  ];
+    getSuggestions();
+  }, []);
 
   return (
     <>
@@ -52,11 +32,11 @@ const RelatedSearch = ({ title, name }) => {
           </p>
           <ul className="b_vList b_divsec">
             {
-              relatedData.map((item, index) => {
+              suggest.length > 0 ? suggest.map((item, index) => {
                 return (
                   <li data-priority key={index}>
                     <a
-                      href={`/result/${name + ' ' + item.subtitle}`}
+                      href={`/result/${item.phrase}`}
                       h="ID=SERP,6823.1"
                     >
                       <div
@@ -80,12 +60,12 @@ const RelatedSearch = ({ title, name }) => {
                         </svg>
                       </div>
                       <div className="b_suggestionText" style={{fontSize:'15px'}}>
-                        {name} <strong>{item.subtitle}</strong>
+                        {item.phrase}
                       </div>
                     </a>
                   </li>
                 )
-              })
+              }) : null
             }
           </ul>
         </div>
