@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import './Style.css'
 import { useParams } from 'react-router-dom'
 import Header from '../Commons/Header'
+import axios from 'axios'
 
 function NewsComponent(props) {
   return (
@@ -33,6 +34,8 @@ function NewsComponent(props) {
 export default function Result() {
   const { name } = useParams()
   const [News, SetNewsData] = useState([])
+  const [altNews,setAltNews] = useState([])
+
   useEffect(() => {
     fetch(
       `https://newsapi.org/v2/everything?q=${name}&apiKey=e177595e25c446c08d579556a5a8d16a`
@@ -42,18 +45,42 @@ export default function Result() {
       .catch((error) => console.error(error))
     console.log(News)
   }, [])
+
+  useEffect(() => {
+    async function getNews() {
+      try {
+        const response = await axios.get(`http://127.0.0.1:8000/news/${name}`);
+        console.log(response.data);
+        setAltNews(response.data);
+      } catch (error) {
+        console.error('Error fetching data from Wikipedia:', error);
+      }
+    }
+
+    getNews();
+  }, []);
+
+
   return (
     <>
       <div className="news_result">
         <Header />
         <div className="news-container" style={{overflowY:'scroll',height:'100%', width:'90%'}}>
-          {News.map((news) => (
+          {News.length > 0 ? News.map((news) => (
             <NewsComponent
               title={news.title}
               link={news.url}
               url={news.urlToImage}
               snippet={news.description}
               author={news.source.name}
+            />
+          )) : altNews.map((news) => (
+            <NewsComponent
+              title={news.title}
+              link={news.url}
+              url={news.image}
+              snippet={news.body}
+              author={news.source}
             />
           ))}
         </div>
