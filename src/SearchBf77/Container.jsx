@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import ImageData from "./ImageData";
+import axios from "axios";
 import ImageCard from "./ImageCard";
 import SideImage from "./SideImage";
 import { useParams } from "react-router-dom";
@@ -9,20 +9,18 @@ function Container() {
   const [currentSelectedCard, setCurrentSelectedCard] = useState();
   const [isImageOpen, setIsImageOpen] = useState(false)
   const [imgData, setimgData] = useState([]);
-  const [imgData2, setimgData2] = useState([]);
-  const [startIndex,setstartIndex] = useState(10);
+  const [altData, setAltData] = useState([]);
+  const [startIndex, setstartIndex] = useState(10);
 
   useEffect(() => {
     const fetchImages = async () => {
-      try 
-      {
-        for(let i = 0 ; i <= Math.min(startIndex,70) ; i+=10)
-        {
+      try {
+        for (let i = 0; i <= Math.min(startIndex, 70); i += 10) {
           let response = await fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyAPe5RBxcHm1VyIEUVu1dRQO5M4W4EnYrI&cx=6563eb05187c74b28&q=${name}&start=${i}&searchType=image`);
           let data = await response.json();
 
           const dataItems = data?.items ? data.items : [];
-          
+
           setimgData(prevData => [...prevData, ...dataItems]);
           setstartIndex(data.queries.nextPage[0].startIndex);
 
@@ -35,18 +33,19 @@ function Container() {
     fetchImages();
   }, []);
 
-  // useEffect(() => {
-  //   const fetchImages = async () => {
-  //     try {
-  //       const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyAPe5RBxcHm1VyIEUVu1dRQO5M4W4EnYrI&cx=6563eb05187c74b28&q=${name}&start=11&searchType=image`);
-  //       const data = await response.json();
-  //       setimgData2(data.items);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
-  //   fetchImages();
-  // }, []);
+  useEffect(() => {
+    async function getText() {
+      try {
+        const response = await axios.get(`http://127.0.0.1:8000/images/${name}/`);
+        console.log(response.data);
+        setAltData(response.data);
+      } catch (error) {
+        console.error('Error fetching data from Wikipedia:', error);
+      }
+    }
+
+    getText();
+  }, []);
 
   return (
     <>
@@ -86,7 +85,7 @@ function Container() {
             data-iid="images.5996"
             data-layout="row"
           >
-            {imgData?.map((val, index) => {
+            {imgData.length > 0 ? imgData.map((val, index) => {
               return (
                 <ImageCard
                   key={index}
@@ -96,19 +95,13 @@ function Container() {
                   setIsImageOpen={setIsImageOpen}
                 />
               );
-            })}
+            }) : altData.map((val, index) => {
+              return (
+                <ImageCard key={index} imgurl={val.image} info={val.title} setCurrentSelectedCard={setCurrentSelectedCard} setIsImageOpen={setIsImageOpen} />
+              )
+            })
+            }
 
-            {imgData2?.map((val, index) => {
-              return (
-                <ImageCard
-                  key={index}
-                  imgurl={val.image.thumbnailLink}
-                  info={val.snippet}
-                  setCurrentSelectedCard={setCurrentSelectedCard}
-                  setIsImageOpen={setIsImageOpen}
-                />
-              );
-            })}
           </div>
           {console.log(currentSelectedCard)}
           {

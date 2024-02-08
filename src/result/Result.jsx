@@ -95,6 +95,7 @@ export default function Result() {
   const [wiki, SetwikiData] = useState([])
   const [remResults, setremResults] = useState([])
   const [altresults,setAltresults] = useState([])
+  const [aiChat,setAIChat] = useState('')
   const { name } = useParams()
 
   useEffect(() => {
@@ -102,7 +103,7 @@ export default function Result() {
       try {
         const response = await axios.get(`https://en.wikipedia.org/api/rest_v1/page/summary/${name}`);
         SetwikiData(response.data);
-        console.log(response.data)
+        // console.log(response.data)
       } catch (error) {
         console.error('Error fetching data from Wikipedia:', error);
       }
@@ -116,7 +117,7 @@ export default function Result() {
       try {
         const response = await axios.get(`https://www.googleapis.com/customsearch/v1?key=AIzaSyAPe5RBxcHm1VyIEUVu1dRQO5M4W4EnYrI&cx=6563eb05187c74b28&q=${name}&start=0`);
         setDatatotal(response.data.items)
-        console.log(response.data.items);
+        // console.log(response.data.items);
       } catch (error) {
         console.error('Error fetching data from Wikipedia:', error);
       }
@@ -131,7 +132,7 @@ export default function Result() {
         try {
           const response = await axios.get(`https://www.googleapis.com/customsearch/v1?key=AIzaSyAPe5RBxcHm1VyIEUVu1dRQO5M4W4EnYrI&cx=6563eb05187c74b28&q=${name}&start=${i}`);
           setremResults(prevData => [...prevData, ...response.data.items])
-          console.log(response.data.items);
+          // console.log(response.data.items);
         } catch (error) {
           console.error('Error fetching data from Wikipedia:', error);
         }
@@ -155,6 +156,19 @@ export default function Result() {
     getText();
   }, []);
 
+  useEffect(() => {
+    async function getChat() {
+      try {
+        const response = await axios.get(`http://127.0.0.1:8000/chat/${name}`);
+        setAIChat(response.data.response);
+      } catch (error) {
+        console.error('Error fetching data from Bharat AI:', error);
+      }
+    }
+
+    getChat();
+  }, []);
+
   return (
     <>
       <div>
@@ -164,12 +178,9 @@ export default function Result() {
         <div id="b_content">
           <main aria-label="Search Results">
             {
-              wiki.extract?.length ? (<div className="aiResult example" style={{ height: '40px',position:'relative' }}>
-                <h1 style={{ fontWeight: '700', color: 'black', fontSize: '20px' }}>
-                  {wiki.title}
-                </h1>
+              aiChat?.length ? (<div className="aiResult example" style={{ height: '40px',position:'relative' }}>
                 <p style={{ color: 'black', marginTop: '10px', fontSize: '15px' }}>
-                  {wiki.extract}
+                  {aiChat}
                 </p>
                 <p style={{textAlign:'right',fontSize:'15px'}}>Powered by <img src={ailogo} style={{height:'65px',width:'80px'}}/></p>
               </div>) : ''
