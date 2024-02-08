@@ -94,6 +94,7 @@ export default function Result() {
   const [Totalresults, setDatatotal] = useState([])
   const [wiki, SetwikiData] = useState([])
   const [remResults, setremResults] = useState([])
+  const [altresults,setAltresults] = useState([])
   const { name } = useParams()
 
   useEffect(() => {
@@ -126,7 +127,6 @@ export default function Result() {
 
   useEffect(() => {
     async function getSearchData() {
-
       for (let i = 11; i <= 31; i = i + 10) {
         try {
           const response = await axios.get(`https://www.googleapis.com/customsearch/v1?key=AIzaSyAPe5RBxcHm1VyIEUVu1dRQO5M4W4EnYrI&cx=6563eb05187c74b28&q=${name}&start=${i}`);
@@ -139,6 +139,20 @@ export default function Result() {
     }
 
     getSearchData();
+  }, []);
+
+  useEffect(() => {
+    async function getText() {
+      try {
+        const response = await axios.get(`http://127.0.0.1:8000/text/${name}/`);
+        console.log(response.data);
+        setAltresults(response.data);
+      } catch (error) {
+        console.error('Error fetching data from Wikipedia:', error);
+      }
+    }
+
+    getText();
   }, []);
 
   return (
@@ -169,7 +183,7 @@ export default function Result() {
             >
               <ol id="b_results" className>
                 {
-                  Totalresults ? Totalresults?.map((results, index) => (
+                  Totalresults.length > 0 ? Totalresults.map((results, index) => (
                     <ResultComponent
                       title={results.title}
                       link={results.link}
@@ -177,11 +191,12 @@ export default function Result() {
                       snippet={results.snippet}
                       index={index}
                     />
-                  )) : <NoDataFound />
+                  )) : altresults.map((results,index) => (
+                    <ResultComponent title={results.title} link={results.href} displayLink={results.href} snippet={results.body} index={index}/>
+                  )) 
                 }
 
                 <RelatedSearch title={wiki.title} name={name} />
-                {/* <Pagination title={wiki.title} /> */}
 
                 {
                   remResults ? remResults?.map((results, index) => (
